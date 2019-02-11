@@ -32,11 +32,11 @@ public class XMLParser {
                         Element nElement = (Element) parameters;
                         NodeList nL = nElement.getElementsByTagName("*");
                         String name = nL.item(0).getTextContent();
-                        int weight = Integer.valueOf(nL.item(1).getTextContent());
+                        int price = Integer.valueOf(nL.item(1).getTextContent());
                         int speed = Integer.valueOf(nL.item(2).getTextContent());
                         int carry = Integer.valueOf(nL.item(3).getTextContent());
                         int distance = Integer.valueOf(nL.item(4).getTextContent());
-                        Card card = new Card(name, weight, speed, carry, distance);
+                        Card card = new Card(name, price, speed, carry, distance);
                         cards.add(card);
                     }
                 }

@@ -4,14 +4,14 @@ public class Card {
 
 
     private String name;
-    private int weight;
+    private int price;
     private int maxSpeed;
     private int pplToCarry;
     private int maxDistance;
 
-    public Card(String name, int weight, int maxSpeed, int pplToCarry, int maxDistance) {
+    public Card(String name, int price, int maxSpeed, int pplToCarry, int maxDistance) {
         this.name = name;
-        this.weight = weight;
+        this.price = price;
         this.maxSpeed = maxSpeed;
         this.pplToCarry = pplToCarry;
         this.maxDistance = maxDistance;
@@ -21,8 +21,8 @@ public class Card {
         return name;
     }
 
-    public int getWeight() {
-        return weight;
+    public int getPrice() {
+        return price;
     }
 
     public int getMaxSpeed() {
@@ -41,7 +41,7 @@ public class Card {
     public String toString() {
         return "Card{" +
                 "name='" + name + '\'' +
-                ", weight=" + weight +
+                ", $$$=" + price +
                 ", maxSpeed=" + maxSpeed +
                 ", pplToCarry=" + pplToCarry +
                 ", maxDistance=" + maxDistance +

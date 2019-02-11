@@ -1,163 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Cards>
     <Card>
-        <name>1st</name>
-        <weight>10</weight>
-        <speed>11</speed>
-        <carry>12</carry>
-        <distance>13</distance>
+        <name>Airbus A380</name>
+        <price>445</price>
+        <speed>900</speed>
+        <carry>544</carry>
+        <distance>15700</distance>
     </Card>
 
     <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
+        <name>Airbus A330</name>
+        <price>200</price>
+        <speed>913</speed>
+        <carry>600</carry>
+        <distance>13450</distance>
     </Card>
 
     <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
+        <name>Boeing 747</name>
+        <price>24</price>
+        <speed>967</speed>
+        <carry>366</carry>
+        <distance>9800</distance>
     </Card>
 
     <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
+        <name>F-22 Raptor</name>
+        <price>334</price>
+        <speed>2335</speed>
+        <carry>1</carry>
+        <distance>1287</distance>
     </Card>
 
     <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
+        <name>Paper Plane</name>
+        <price>1</price>
+        <speed>10</speed>
+        <carry>0</carry>
+        <distance>1</distance>
     </Card>
 
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
-
-    <Card>
-        <name>2nd</name>
-        <weight>20</weight>
-        <speed>20</speed>
-        <carry>20</carry>
-        <distance>20</distance>
-    </Card>
 
 </Cards>
