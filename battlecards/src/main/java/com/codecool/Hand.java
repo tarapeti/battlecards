@@ -1,41 +1,31 @@
 package com.codecool;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Hand{
+public class Hand {
+    List<List<Card>> hand = new ArrayList<>();
 
+    public  void giveHands(List<Card> deck) {
+        List<Card> deck1Deck = deck;
+        List<Card> smallDeck = new ArrayList<>();
+        for(int i = 0; i < deck1Deck.size();){
+            smallDeck.add(deck1Deck.get(i));
+                if(smallDeck.size() == 5){
+                    hand.add(smallDeck);
+                    smallDeck = new ArrayList<>();
+                    i = i + 5;
 
+                    
 
-    public List<List<Card>> getDecks(){
-        Deck deck = new Deck();
-        List<Card> myDeck = deck.getDeck();
-
-        List<List<Card>> result = new ArrayList<>() ;
-        List<Card> card5 =new ArrayList<>();
-        System.out.println(myDeck.size());
-        for (int i = 0; i < myDeck.size(); i++){
-            card5.add(myDeck.get(i));
-            if (card5.size() == 5){
-                result.add(card5);
-                card5 =new ArrayList<>();
-            }
-
-            System.out.println("");
-
-
-        }
-
-        //Test
-        for(List<Card> cardList : result){
-            System.out.println("\nElement of 5: ");
-            int i = 0;
-            for (Card c : cardList){
-                System.out.printf(c.getName() + " - ");
-                i++;
-            }
-            System.out.println("\n\n");
+                }
+                else {
+                    i++;
+                }
 
         }
-        return result;
+    }
+
+    public List<List<Card>> getHand() {
+        return hand;
     }
 }
-
