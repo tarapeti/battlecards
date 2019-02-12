@@ -15,17 +15,11 @@ public class Deck {
     }
 
     private void shuffleDeck(){
-        System.out.println("original deck: ");
-        for (Card c : deck){
-            System.out.printf(c.getName() + " - ");
-        }
+
 
         Collections.shuffle(this.deck);
 
-        System.out.println("\n\nshuffled deck: ");
-        for (Card c : deck){
-            System.out.printf(c.getName() + " - ");
-        }
+
     }
 
 
