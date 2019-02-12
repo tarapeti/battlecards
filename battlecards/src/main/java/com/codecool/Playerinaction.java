@@ -8,4 +8,9 @@ public class Playerinaction {
     public Playerinaction(List<Card> hand) {
         this.hand = hand;
     }
+
+    public List<Card> getHand(){
+        return hand;
+    }
+
 }
