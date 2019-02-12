@@ -1,31 +1,34 @@
 package com.codecool;
 
+import java.util.List;
+
 public class UI {
 
-    public void menuPrint(){
-
-    }
-    public  void welcomePrint(){
-
-    }
-    public void chooseNumOfPlayers(){
-
-    }
-    public void chooseName(){
-
-    }
-    public void printHand(){
-
-    }
-    public void betType(){
-
-    }
-    public void betCard(){
-
-    }
-    public void asd(){
-        
+    public void menuPrint() {
+        welcomePrint();
+        System.out.println("Choose a number:");
+        System.out.println("1.Play a game");
+        System.out.println("0.Quit");
     }
 
+    private void welcomePrint() {
+        System.out.println("\t\n" +
+                " ____________________________\n" +
+                " \\                          \\          ___        ______ |\n" +
+                "  \\   ╦ ╦┌─┐┬  ┌─┐┌─┐┌┬┐┌─┐  \\        /   \\___-=0`/|0`/__|\n" +
+                "   \\  ║║║├┤ │  │  │ ││││├┤    \\_______\\          / | /    )\n" +
+                "   /   ╚╩╝└─┘┴─┘└─┘└─┘┴ ┴└─┘   /         `/-==__ _/__|/__=-|\n" +
+                "  /___________________________/          *            \\ | |\n" +
+                "                                                      (o)");
 
+
+    }
+
+    public void printHand(List<Card> hand) {
+        for (Card c : hand) {
+            System.out.println(c);
+        }
+
+
+    }
 }
