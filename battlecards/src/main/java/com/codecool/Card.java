@@ -47,4 +47,5 @@ public class Card {
                 ", maxDistance=" + maxDistance +
                 '}';
     }
+
 }
