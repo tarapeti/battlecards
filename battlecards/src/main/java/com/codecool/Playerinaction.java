@@ -1,5 +1,6 @@
 package com.codecool;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Playerinaction {
@@ -13,4 +14,13 @@ public class Playerinaction {
         return hand;
     }
 
+    public void setHand(List<Card> hand, int index) {
+        List<Card> result = new ArrayList<>();
+        for (int i = 0; i < hand.size(); i++){
+            if(index != i){
+                result.add(hand.get(i));
+            }
+        }
+        this.hand = result;
+    }
 }

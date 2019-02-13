@@ -22,4 +22,8 @@ public class Hand {
     public List<List<Card>> getHand() {
         return hand;
     }
+
+    public List<List<Card>> setSmallDeck(List<Card> cards) {
+        return hand;
+    }
 }
