@@ -17,37 +17,6 @@ public class Main {
             System.exit(0);
         }
 
-
-
-        //teszt
-        Table table = new Table();
-
-
-        ArrayList<String> names = new ArrayList<String>();
-        names.add("name1");
-        names.add("name2");
-        names.add("name3");
-        names.add("name4");
-
-
-
-        List<Player> playerList = table.setUpTable(names);
-
-        System.out.println("TTTT");
-
-        Player p = playerList.get(0);
-        System.out.println(p.getHand());
-        p.setHand(p.getHand(), 2);
-        System.out.println(p.getHand());
-
-
-
-
-
-
-
-
-
     }
 
 
