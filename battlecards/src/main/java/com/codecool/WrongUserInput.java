@@ -1,4 +1,4 @@
 package com.codecool;
 
-public class WrongUserInput extends Exception {
+public class WrongUserInput extends Error {
 }

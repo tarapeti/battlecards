@@ -2,14 +2,16 @@ package com.codecool;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Input {
-    public void chooseNumOfPlayers(){
+    public void chooseNumOfPlayers() {
 
 
     }
-    public void chooseName(){
+
+    public void chooseName() {
 
     }
 
@@ -29,44 +31,65 @@ public class Input {
             return 0;
         }
         return 0;
-        }
+    }
 
 
-
-
-
-        public String handleInput(int n ){
+    public String handleInput(int n) {
         //gives the sting for the comparator
-            if(n == 0){
-                betType();
-            }
-            else{
-
-                switch (n) {
-                    case (1):
-                        return "price";
-                    break;
-                    case (2):
-                        return "speed";
-                    break;
-                    case (3):
-                        return "carry";
-                    break;
-                    case (4):
-                        return "distance";
-                    break;
-                }
-
-            }
-            return "R";
+        String ans = "R";
+        if (n == 0) {
+            betType();
+        } else switch (n) {
+            case (1):
+                ans = "price";
+                break;
+            case (2):
+                ans = "speed";
+                break;
+            case (3):
+                ans = "carry";
+                break;
+            case (4):
+                ans = "distance";
+                break;
+        }
+        return ans;
 
     }
 
 
+    public ArrayList<String> playInput() {
+        ArrayList<String> retList = new ArrayList<>();
+        int numP = 0;
+        System.out.println("Number of players: ");
+        Scanner scanner = new Scanner(System.in);
+        try {
+            numP = scanner.nextInt();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
 
+        if (numP <= 4 || numP >= 2) {
+            for (int i = 0; i < numP; i++) {
+                System.out.println("Player "+(i+1) +" enter your name: ");
+                Scanner scanPlayerName = new Scanner(System.in);
+                String name = scanPlayerName.nextLine();
+                retList.add(name);
+            }
+        } else {
+            System.out.println("Too few/much players, you can play this game with 2-4 players");
+            System.out.println("Please enter the players again");
+            playInput();
 
-    public void betCard(){
+        }
+        return retList;
+
+
+    }
+
+    public void betCard() {
 
     }
 }

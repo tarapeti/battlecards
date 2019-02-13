@@ -38,7 +38,7 @@ public class Comparator {
     public void incWinnerPoints(List<Player> players, Card winnerCard){
         for (Player player : players){
             for (Card card : player.getHand()){
-                if (winnerCard.getName().equals(card.getName()){
+                if (winnerCard.getName().equals(card.getName())){
                     System.out.println(winnerCard.getName() + " = " + card.getName());
                     System.out.println(player.getName() + "'s card won.");
                 }
