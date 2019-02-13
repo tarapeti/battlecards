@@ -18,7 +18,7 @@
 
     <Card>
         <name>Boeing 747</name>
-        <price>24</price>
+        <price>240</price>
         <speed>967</speed>
         <carry>366</carry>
         <distance>9800</distance>
@@ -27,7 +27,7 @@
     <Card>
         <name>F-22 Raptor</name>
         <price>334</price>
-        <speed>2335</speed>
+        <speed>1963</speed>
         <carry>1</carry>
         <distance>1287</distance>
     </Card>
@@ -41,126 +41,124 @@
     </Card>
 
     <Card>
-        <name>Airbus A380</name>
-        <price>445</price>
-        <speed>900</speed>
-        <carry>544</carry>
-        <distance>15700</distance>
+
+        <name>B–2 Spirit</name>
+        <price>2200</price>
+        <speed>760</speed>
+        <carry>2</carry>
+        <distance>15000</distance>
     </Card>
 
     <Card>
-        <name>Airbus A330</name>
-        <price>200</price>
-        <speed>913</speed>
-        <carry>600</carry>
-        <distance>13450</distance>
+        <name>B–58 Hustler</name>
+        <price>130</price>
+        <speed>2600</speed>
+        <carry>3</carry>
+        <distance>7590</distance>
     </Card>
 
     <Card>
-        <name>Boeing 747</name>
-        <price>24</price>
-        <speed>967</speed>
-        <carry>366</carry>
-        <distance>9800</distance>
+        <name>Avro Vulcan</name>
+        <price>967</price>
+        <speed>1038</speed>
+        <carry>5</carry>
+        <distance>4171</distance>
     </Card>
 
     <Card>
-        <name>F-22 Raptor</name>
-        <price>334</price>
-        <speed>2335</speed>
-        <carry>1</carry>
-        <distance>1287</distance>
+        <name>E–8 JSTARS</name>
+        <price>270</price>
+        <speed>945</speed>
+        <carry>19</carry>
+        <distance>9650</distance>
     </Card>
 
     <Card>
-        <name>Paper Plane</name>
-        <price>1</price>
-        <speed>10</speed>
+        <name>E–8 JSTARS</name>
+        <price>270</price>
+        <speed>945</speed>
+        <carry>19</carry>
+        <distance>9650</distance>
+    </Card>
+
+    <Card>
+        <name>Rutan VariEze</name>
+        <price>47</price>
+        <speed>265</speed>
+        <carry>2</carry>
+        <distance>1369</distance>
+    </Card>
+
+    <Card>
+        <name>Airbus Beluga</name>
+        <price>210</price>
+        <speed>787</speed>
+        <carry>2</carry>
+        <distance>1700</distance>
+    </Card>
+
+    <Card>
+        <name>DHC–3 Otter</name>
+        <price>136</price>
+        <speed>257</speed>
+        <carry>10</carry>
+        <distance>1520</distance>
+    </Card>
+
+    <Card>
+        <name>MQ–1 Predator</name>
+        <price>4020</price>
+        <speed>217</speed>
         <carry>0</carry>
-        <distance>1</distance>
+        <distance>8500</distance>
     </Card>
 
     <Card>
-        <name>Airbus A380</name>
-        <price>445</price>
-        <speed>900</speed>
-        <carry>544</carry>
-        <distance>15700</distance>
-    </Card>
-
-    <Card>
-        <name>Airbus A330</name>
-        <price>200</price>
-        <speed>913</speed>
-        <carry>600</carry>
-        <distance>13450</distance>
-    </Card>
-
-    <Card>
-        <name>Boeing 747</name>
-        <price>24</price>
-        <speed>967</speed>
-        <carry>366</carry>
-        <distance>9800</distance>
-    </Card>
-
-    <Card>
-        <name>F-22 Raptor</name>
-        <price>334</price>
-        <speed>2335</speed>
+        <name>R–18 Kánya</name>
+        <price>15</price>
+        <speed>106</speed>
         <carry>1</carry>
-        <distance>1287</distance>
+        <distance>600</distance>
     </Card>
 
     <Card>
-        <name>Paper Plane</name>
-        <price>1</price>
-        <speed>10</speed>
-        <carry>0</carry>
-        <distance>1</distance>
+        <name>Fuji FA-200 Aero Subaru</name>
+        <price>20</price>
+        <speed>237</speed>
+        <carry>2</carry>
+        <distance>1400</distance>
     </Card>
 
     <Card>
-        <name>Airbus A380</name>
-        <price>445</price>
-        <speed>900</speed>
-        <carry>544</carry>
-        <distance>15700</distance>
+        <name>Concorde</name>
+        <price>151</price>
+        <speed>2200</speed>
+        <carry>3</carry>
+        <distance>7500</distance>
     </Card>
 
     <Card>
-        <name>Airbus A330</name>
-        <price>200</price>
-        <speed>913</speed>
-        <carry>600</carry>
-        <distance>13450</distance>
+        <name>McDonnell Douglas DC–8</name>
+        <price>75</price>
+        <speed>959</speed>
+        <carry>176</carry>
+        <distance>7410</distance>
     </Card>
 
     <Card>
-        <name>Boeing 747</name>
-        <price>24</price>
-        <speed>967</speed>
-        <carry>366</carry>
-        <distance>9800</distance>
+        <name>Phenom 100</name>
+        <price>9</price>
+        <speed>704</speed>
+        <carry>6</carry>
+        <distance>2148</distance>
     </Card>
 
     <Card>
-        <name>F-22 Raptor</name>
-        <price>334</price>
-        <speed>2335</speed>
-        <carry>1</carry>
-        <distance>1287</distance>
+        <name>Szuhoj Superjet 100</name>
+        <price>27</price>
+        <speed>870</speed>
+        <carry>100</carry>
+        <distance>4578</distance>
     </Card>
-
-    <Card>
-        <name>Paper Plane</name>
-        <price>1</price>
-        <speed>10</speed>
-        <carry>0</carry>
-        <distance>1</distance>
-    </Card>
-
-
-
-
+    
 </Cards>

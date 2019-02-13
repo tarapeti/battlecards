@@ -4,14 +4,14 @@ import java.util.List;
 
 public class UI {
 
-    public void menuPrint() {
+    public static void menuPrint() {
         welcomePrint();
         System.out.println("Choose a number:");
         System.out.println("1.Play a game");
         System.out.println("0.Quit");
     }
 
-    private void welcomePrint() {
+    private static void welcomePrint() {
         System.out.println("\t\n" +
                 " ____________________________\n" +
                 " \\                          \\          ___        ______ |\n" +
@@ -24,7 +24,7 @@ public class UI {
 
     }
 
-    public void printHand(List<Card> hand) {
+    public static void printHand(List<Card> hand) {
         for (Card c : hand) {
             System.out.println(c);
         }

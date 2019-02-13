@@ -1,31 +1,21 @@
 package com.codecool;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        Play play = new Play();
 
-    Table table = new Table();
-    //table.play();
-
-    Deck testDeck = new Deck();
-    List<Card> testCardList = testDeck.getDeck();
-    Comparator testCompare = new Comparator();
-    Table testTable = new Table();
-
-    //TEST CompareCards
-    Card testWinnerCard = testCompare.compareCards(testCardList,"speed");
-    System.out.println(testWinnerCard.getName() + " "+  testWinnerCard.getMaxSpeed());
-
-
-    //TEST incWinnerPoint
-         List<Player> testPlayerlist = table.getPlayerList();
-    testCompare.incWinnerPoints(testPlayerlist ,testWinnerCard);
-
-
-    //TEST RemoveCard
-        System.out.println("curr");
-        testCompare.removePlayedCards(testPlayerlist,testCardList);
+        int menuChoice = Input.menuInput();
+        if (menuChoice == 1) {
+            play.play();
+        } else if (menuChoice == 0) {
+            System.exit(0);
+        } else {
+            System.out.println("BAD USER, BYE!!!");
+            System.exit(0);
+        }
 
     }
 }
