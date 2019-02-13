@@ -18,6 +18,7 @@ public class Table {
             Player player = new Player((hand.getHand().get(i)),0,(i+1),players.get(i));
             retList.add(player);
         }
+
         return retList;
 
 

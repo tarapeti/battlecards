@@ -1,8 +1,16 @@
 package com.codecool;
 
+import java.util.ArrayList;
+
 public class Play {
-    Table table = new Table();
-    UI ui = new UI();
-    Input input= new Input();
+    public void play() {
+        Table table = new Table();
+        ArrayList<String> playerNames = Input.playInput();
+        table.setUpTable(playerNames);
+
+
+    }
+
+
 
 }

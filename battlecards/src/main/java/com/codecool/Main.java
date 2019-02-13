@@ -4,15 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+        Play play = new Play();
 
-        Input inp = new Input();
-        Table table = new Table();
-        ArrayList<String> strings = inp.playInput();
-        table.setUpTable(strings);
+        int menuChoice = Input.menuInput();
+        if (menuChoice == 1) {
+            play.play();
+        } else if (menuChoice == 0) {
+            System.exit(0);
+        } else {
+            System.out.println("BAD USER, BYE!!!");
+            System.exit(0);
+        }
 
-
-        //TEST incWinnerPoint
-    //testCompare.incWinnerPoints( ,testWinnerCard);
     }
 }
