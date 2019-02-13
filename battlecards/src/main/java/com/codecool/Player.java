@@ -25,4 +25,8 @@ public class Player extends Playerinaction {
     public String getName() {
         return name;
     }
+
+    public void increasePoint(){
+        this.point++;
+    }
 }

@@ -36,6 +36,7 @@ public class Input {
 
 
         public String handleInput(int n ){
+        String result = "R";
         //gives the sting for the comparator
             if(n == 0){
                 betType();
@@ -44,21 +45,21 @@ public class Input {
 
                 switch (n) {
                     case (1):
-                        return "price";
+                        result =  "price";
                     break;
                     case (2):
-                        return "speed";
+                        result = "speed";
                     break;
                     case (3):
-                        return "carry";
+                        result = "carry";
                     break;
                     case (4):
-                        return "distance";
+                        result = "distance";
                     break;
                 }
 
             }
-            return "R";
+            return result;
 
     }
 

@@ -19,6 +19,8 @@ public class Main {
 
 
     //TEST incWinnerPoint
-    //testCompare.incWinnerPoints( ,testWinnerCard);
+         List<Player> testPlayerlist = table.getPlayerList();
+    testCompare.incWinnerPoints(testPlayerlist ,testWinnerCard);
+
     }
 }
