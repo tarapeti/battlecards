@@ -17,11 +17,8 @@ public class Table {
         Hand hand = new Hand();
         hand.giveHands(deck.getDeck());
         Player player = new Player((hand.getHand().get(0)),0,1,"Gábor");
-        Player player1 = new Player((hand.getHand().get(0)),0,1,"Gergő");
-        Player player2 = new Player((hand.getHand().get(0)),0,1,"Peti");
-        Player player3 = new Player((hand.getHand().get(0)),0,1,"Bence");
-        System.out.println(player);
-        System.out.println(hand.getHand().get(0).get(0).getName());
+        //System.out.println(player);
+        //System.out.println(hand.getHand().get(0).get(0).getName());
 
     }
     public List<Player> getPlayerList(){

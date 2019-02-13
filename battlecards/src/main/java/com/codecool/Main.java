@@ -22,5 +22,10 @@ public class Main {
          List<Player> testPlayerlist = table.getPlayerList();
     testCompare.incWinnerPoints(testPlayerlist ,testWinnerCard);
 
+
+    //TEST RemoveCard
+        System.out.println("curr");
+        testCompare.removePlayedCards(testPlayerlist,testCardList);
+
     }
 }

@@ -48,4 +48,19 @@ public class Comparator {
             }
         }
     }
+
+    public List<Player> removePlayedCards(List<Player> players, List<Card> selectedCards){
+        int[] result = new int[20]; //Change it to 3
+        for (Player player : players){
+            for (Card card : player.getHand()){
+                for (Card sCard : selectedCards){
+                    if (card.getName() == sCard.getName()){
+                        System.out.printf(card.getName() + " = " + sCard.getName());
+                    }
+                }
+            }
+            System.out.println("");
+        }
+        return null;
+    }
 }
