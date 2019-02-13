@@ -7,11 +7,11 @@ public class Play {
         Table table = new Table();
         ArrayList<String> playerNames = Input.playInput();
         table.setUpTable(playerNames);
+        
+
 
 
     }
 
-
-
-
 }
+
