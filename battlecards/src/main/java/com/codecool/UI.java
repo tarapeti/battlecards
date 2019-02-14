@@ -1,6 +1,6 @@
 package com.codecool;
 
-import java.util.List;
+import java.util.*;
 
 public class UI {
 
@@ -31,8 +31,66 @@ public class UI {
 
 
     }
-    public static void flushCMD(){
+
+    public static void flushCMD() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
+
+    private static boolean hasDuplicate(ArrayList<Integer> items) {
+        Set<Integer> appeared = new HashSet<>();
+        for (int item : items) {
+            if (!appeared.add(item)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static List<Player> winner(List<Player> player) {
+        List<Player> winners = new ArrayList<>();
+        ArrayList<Integer> points = new ArrayList<>();
+
+        for (int i = 0; i < player.size(); i++) {
+            points.add(player.get(i).getPoint());
+        }
+        ArrayList<Integer> backUp = new ArrayList<>(points);
+        Collections.sort(points);
+        if(points.get(0).equals(points.get(1))){
+           int tie1 = backUp.indexOf(points.get(0));
+           int tie2 = backUp.indexOf(points.get(1));
+
+           winners.add(player.get(tie1));
+           winners.add(player.get(tie2));
+        }
+        if(!(points.get(0).equals(points.get(1)))){
+            int tie1 = backUp.indexOf(points.get(0));
+            winners.add(player.get(tie1));
+        }
+        return winners;
+
+    }
+    public static void displayWinner(List<Player> winners){
+        List<Player> toPrint = winner(winners);
+        if(toPrint.size() == 2){
+            System.out.println("We got a tie game");
+            for(Player win :winners){
+                System.out.println(win);
+            }
+            System.out.println("Are the winners congrats!");
+        }
+        if (toPrint.size() == 1 ){
+            System.out.println(toPrint.get(0) +"Is the winner congrats!");
+
+        }
+        if(toPrint.size()< 0 || toPrint.size()>3){
+            System.out.println("RIP");
+            throw new ImposibleError();
+        }
+
+
+    }
+
+
 }
+
