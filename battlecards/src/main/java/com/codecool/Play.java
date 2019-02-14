@@ -14,6 +14,8 @@ public class Play {
             round(players);
         }
 
+        UI.displayWinner(players);
+
         UI.flushCMD();
     }
 
@@ -25,7 +27,7 @@ public class Play {
         int choice= 1;
         int[] choices = new int[players.size()];
         for(int i = 0; i < players.size(); i++){
-            System.out.println(players.get(i).getName());
+            System.out.println("\n" + players.get(i).getName() +"'s deck: ");
             choice = Input.chooseCard(players.get(i).getHand());
             selected.add(players.get(i).getHand().get(choice-1));
             choices[i] = choice;

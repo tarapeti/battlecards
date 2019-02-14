@@ -10,12 +10,12 @@ public class Input {
 
 
     public static int betType() {
-        System.out.println("1.Price\n" +
+        System.out.println("\n1.Price\n" +
                 "2.Speed\n" +
                 "3.Passenger capacity\n" +
                 "4.Maximum distance");
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the parameter's number: ");
+        System.out.print("\nEnter the parameter's number: ");
         try {
             int n = scan.nextInt();
             if (n == 1 || n == 2 || n == 3 || n == 4) {
@@ -55,7 +55,7 @@ public class Input {
     public static ArrayList<String> playInput() {
         ArrayList<String> retList = new ArrayList<>();
         int numP = 0;
-        System.out.println("Number of players: ");
+        System.out.print("\nNumber of players: ");
         Scanner scanner = new Scanner(System.in);
         try {
             numP = scanner.nextInt();
@@ -66,7 +66,7 @@ public class Input {
 
         if (numP <= 4 && numP >= 2) {
             for (int i = 0; i < numP; i++) {
-                System.out.println("Player " + (i + 1) + " enter your name: ");
+                System.out.print("Player " + (i + 1) + " enter your name: ");
                 Scanner scanPlayerName = new Scanner(System.in);
                 String name = scanPlayerName.nextLine();
                 retList.add(name);
@@ -85,7 +85,7 @@ public class Input {
     public static int menuInput() {
         UI.menuPrint();
         int numP = 0;
-        System.out.println("Enter your choice: ");
+        System.out.print("\nEnter your choice: ");
         Scanner scanner = new Scanner(System.in);
         try {
             numP = scanner.nextInt();
@@ -98,11 +98,8 @@ public class Input {
 
     public static int chooseCard(List<Card> cardList){
         int i = 1;
-        for (Card c : cardList){
-            System.out.println(c + " " + i);
-            i++;
-        }
-        System.out.println("Plase choose a card: ");
+        UI.printHand(cardList);
+        System.out.print("\nPlease choose a card: ");
         Scanner scan = new Scanner(System.in);
         int result = scan.nextInt();
         if (result > cardList.size() || result < 1 ){

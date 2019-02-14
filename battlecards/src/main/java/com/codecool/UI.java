@@ -25,9 +25,19 @@ public class UI {
     }
 
     public static void printHand(List<Card> hand) {
+        /*System.out.println("Name: ");
+        System.out.println("Price: ");
+        System.out.println("Speed: ");
+        System.out.println("Name: ");
+        System.out.println("Name: ");*/
         for (Card c : hand) {
-            System.out.println(c);
+            System.out.println(c + " ");
         }
+        /*name>E–8 JSTARS</name>
+        <price>270</price>
+        <speed>945</speed>
+        <carry>19</carry>
+        <distance>9650</distance>*/
 
 
     }
@@ -56,6 +66,7 @@ public class UI {
         }
         ArrayList<Integer> backUp = new ArrayList<>(points);
         Collections.sort(points);
+        Collections.reverse(points);
         if(points.get(0).equals(points.get(1))){
            int tie1 = backUp.indexOf(points.get(0));
            int tie2 = backUp.indexOf(points.get(1));
@@ -75,12 +86,12 @@ public class UI {
         if(toPrint.size() == 2){
             System.out.println("We got a tie game");
             for(Player win :winners){
-                System.out.println(win);
+                System.out.println(win.getName());
             }
             System.out.println("Are the winners congrats!");
         }
         if (toPrint.size() == 1 ){
-            System.out.println(toPrint.get(0) +"Is the winner congrats!");
+            System.out.println(toPrint.get(0).getName() +" is the winner congrats!");
 
         }
         if(toPrint.size()>3){
