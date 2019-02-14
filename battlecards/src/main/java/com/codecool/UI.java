@@ -30,8 +30,11 @@ public class UI {
         System.out.println("Speed: ");
         System.out.println("Name: ");
         System.out.println("Name: ");*/
+        int i = 1;
         for (Card c : hand) {
-            System.out.println(c + " ");
+            System.out.print("Card ID: " + i +" | ");
+            System.out.println(c);
+            i++;
         }
         /*name>E–8 JSTARS</name>
         <price>270</price>

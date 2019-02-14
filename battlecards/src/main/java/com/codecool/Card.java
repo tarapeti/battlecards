@@ -43,7 +43,7 @@ public class Card {
                 ", Price in millions: " + price +
                 ", Maximum speed in km/h: " + maxSpeed +
                 ", Seats: " + pplToCarry +
-                ", Range in kms" + maxDistance;
+                ", Range in kms: " + maxDistance;
     }
 
 }
