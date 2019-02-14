@@ -3,6 +3,7 @@ package com.codecool;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Input {
@@ -76,7 +77,6 @@ public class Input {
             playInput();
 
         }
-        scanner.close();
         return retList;
 
 
@@ -93,6 +93,23 @@ public class Input {
             e.printStackTrace();
         }
         return numP;
+
+    }
+
+    public static int chooseCard(List<Card> cardList){
+        int i = 1;
+        for (Card c : cardList){
+            System.out.println(c + " " + i);
+            i++;
+        }
+        System.out.println("Plase choose a card: ");
+        Scanner scan = new Scanner(System.in);
+        int result = scan.nextInt();
+        if (result > cardList.size() || result < 1 ){
+            System.out.printf("Wrong input. " + 1 + " - " + cardList.size());
+            chooseCard(cardList);
+        }
+        return result;
 
     }
 }
