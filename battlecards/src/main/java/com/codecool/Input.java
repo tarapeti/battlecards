@@ -55,7 +55,7 @@ public class Input {
     public static ArrayList<String> playInput() {
         ArrayList<String> retList = new ArrayList<>();
         int numP = 0;
-        System.out.print("\nNumber of players: ");
+        System.out.print("\nNumber of players: \n");
         Scanner scanner = new Scanner(System.in);
         try {
             numP = scanner.nextInt();

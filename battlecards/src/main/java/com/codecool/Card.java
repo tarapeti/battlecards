@@ -39,13 +39,11 @@ public class Card {
 
     @Override
     public String toString() {
-        return "Card{" +
-                "name='" + name + '\'' +
-                ", $$$=" + price +
-                ", maxSpeed=" + maxSpeed +
-                ", pplToCarry=" + pplToCarry +
-                ", maxDistance=" + maxDistance +
-                '}';
+        return "Name: " + name  +
+                ", Price in millions: " + price +
+                ", Maximum speed in km/h: " + maxSpeed +
+                ", Seats: " + pplToCarry +
+                ", Range in kms" + maxDistance;
     }
 
 }

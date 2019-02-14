@@ -40,7 +40,6 @@ public class Comparator {
         for (Player player : players){
             for (Card card : player.getHand()){
                 if (winnerCard.getName().equals(card.getName())){
-                    System.out.println(winnerCard.getName() + " = " + card.getName());
                     System.out.println(player.getName() + "'s card won.");
                     player.increasePoint();
                     System.out.println(player.getName() + " has " + player.getPoint() + " point(s)." );
