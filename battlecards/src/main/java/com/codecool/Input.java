@@ -106,6 +106,7 @@ public class Input {
             System.out.printf("Wrong input. " + 1 + " - " + cardList.size());
             chooseCard(cardList);
         }
+        UI.nextPlyer("Next player!");
         return result;
 
     }

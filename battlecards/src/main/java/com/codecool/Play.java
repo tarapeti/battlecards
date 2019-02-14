@@ -16,7 +16,6 @@ public class Play {
 
         UI.displayWinner(players);
 
-        UI.flushCMD();
     }
 
     public void round(List<Player> players) {
@@ -37,17 +36,6 @@ public class Play {
         for (int i = 0; i < players.size(); i++){
             players.get(i).setHand(players.get(i).getHand(),choices[i]-1);
         }
-
-
-
-
-
-
-
-
-
-
-
 
     }
 

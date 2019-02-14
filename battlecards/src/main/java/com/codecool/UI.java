@@ -1,5 +1,6 @@
 package com.codecool;
 
+import java.lang.reflect.Method;
 import java.util.*;
 
 public class UI {
@@ -100,8 +101,27 @@ public class UI {
         }
 
 
+        }
+
+        public static void nextPlyer(String print){
+            flushCMD();
+            System.out.println(print);
+            System.out.println("Enter 0 to continue ");
+            while (true) {
+                Scanner scanner = new Scanner(System.in);
+                String has = scanner.nextLine();
+                flushCMD();
+                if (has.equals("0")){
+                    break;
+
+                }
+                else{
+                    System.out.println("Enter 0!!!");
+                }
+            }
+
+
+        }
     }
 
-
-}
 
