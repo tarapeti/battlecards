@@ -10,6 +10,7 @@ public class Input {
 
 
     public static int betType() {
+
         System.out.println("\n1.Price\n" +
                 "2.Speed\n" +
                 "3.Passenger capacity\n" +
@@ -106,7 +107,7 @@ public class Input {
             System.out.printf("Wrong input. " + 1 + " - " + cardList.size());
             chooseCard(cardList);
         }
-        UI.nextPlyer("Next player!");
+        UI.nextPlyer("Next!");
         return result;
 
     }

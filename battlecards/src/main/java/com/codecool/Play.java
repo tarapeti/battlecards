@@ -5,14 +5,24 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Play {
+    int[] playerNO;
+    int nowPlay =0;
+
     public void play() {
         Table table = new Table();
         ArrayList<String> playerNames = Input.playInput();
         List<Player> players = table.setUpTable(playerNames);
 
+        playerNO = new int[players.size()];
+        for (int i = 0; i < players.size() ; i++) {
+            playerNO[i] = i;
+        }
+
         for (int i = 0; i < 5; i++){
             round(players);
         }
+
+
 
         UI.displayWinner(players);
 
@@ -20,6 +30,10 @@ public class Play {
 
     public void round(List<Player> players) {
         Comparator comp = new Comparator();
+        String nowPlays = players.get(playerNO[nowPlay]).getName();
+        System.out.println("Now " + nowPlays + " has to choose!" );
+
+        this.nowPlay = players.get(nowPlay).getPlayerNo();
         int input =  Input.betType();
         String betType = Input.handleInput(input);
         List<Card> selected = new ArrayList<>();
