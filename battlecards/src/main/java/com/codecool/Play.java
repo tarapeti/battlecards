@@ -22,18 +22,19 @@ public class Play {
         int input =  Input.betType();
         String betType = Input.handleInput(input);
         List<Card> selected = new ArrayList<>();
-        List<Player> backup = new ArrayList<>(players);
         int choice= 1;
-        for(Player player : players){
-            System.out.println(player.getName());
-            choice = Input.chooseCard(player.getHand());
-            selected.add(player.getHand().get(choice-1));
-
-
+        int[] choices = new int[players.size()];
+        for(int i = 0; i < players.size(); i++){
+            System.out.println(players.get(i).getName());
+            choice = Input.chooseCard(players.get(i).getHand());
+            selected.add(players.get(i).getHand().get(choice-1));
+            choices[i] = choice;
         }
-
         Card winnerCard = comp.compareCards(selected,betType);
-        comp.incWinnerPoints(backup, winnerCard);
+        comp.incWinnerPoints(players, winnerCard);
+        for (int i = 0; i < players.size(); i++){
+            players.get(i).setHand(players.get(i).getHand(),choices[i]-1);
+        }
 
 
 
