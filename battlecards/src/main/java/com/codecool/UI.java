@@ -47,7 +47,7 @@ public class UI {
         return false;
     }
 
-    public static List<Player> winner(List<Player> player) {
+    private static List<Player> winner(List<Player> player) {
         List<Player> winners = new ArrayList<>();
         ArrayList<Integer> points = new ArrayList<>();
 
@@ -83,7 +83,7 @@ public class UI {
             System.out.println(toPrint.get(0) +"Is the winner congrats!");
 
         }
-        if(toPrint.size()< 0 || toPrint.size()>3){
+        if(toPrint.size()>3){
             System.out.println("RIP");
             throw new ImposibleError();
         }
